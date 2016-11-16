@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="UTF-8" http-equiv="content-type" content="text/html">
+    <title>Title</title>
+    <script type="text/javascript">
+    function openWindow() {
+        var openUrl;
+        var tmp = confirm("是否要打开新的网页?");
+        if (tmp) {
+            openUrl = prompt("请输入你要打开的网址:", "http://www.imooc.com/")
+            window.open(openUrl, "_blank", "width=400,height=500,menubar=no,toolbar=no")
+        }
+    }
+    </script>
 </head>
+
 <body>
-$END$
+    <input type="button" value="新窗口打开网站" onclick="openWindow()">
 </body>
+
 </html>
